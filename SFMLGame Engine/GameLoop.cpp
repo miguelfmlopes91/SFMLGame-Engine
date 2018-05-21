@@ -1,10 +1,16 @@
-#include "GameLoop.h"
+#include "GameLoop.hpp"
+#include "SplashState.hpp"
 
 namespace Bardo
 {
 	GameLoop::GameLoop(int width, int height, std::string title)
 	{
 		_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
+
+		//Add Splash State
+		_data->machine.AddState(StateRef( SplashState(this->_data)));
+		//add loading maybe?
+
 		this->Run();
 
 	}

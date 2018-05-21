@@ -2,9 +2,9 @@
 #include <memory>
 #include <string>
 #include "SFML/Graphics.hpp"
-#include "StateMachine.h"
-#include "AssetManager.h"
-#include "InputManager.h"
+#include "StateMachine.hpp"
+#include "AssetManager.hpp"
+#include "InputManager.hpp"
 
 namespace Bardo 
 {

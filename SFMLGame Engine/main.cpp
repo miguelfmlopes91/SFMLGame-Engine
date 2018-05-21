@@ -1,13 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "GameLoop.h"
-
-#define SCREEN_WIDTH 1024
-#define SCREEN_WIDTH 1024
+#include "GameLoop.hpp"
+#include "DEFINITIONS.hpp"
 
 int main()
 {
-	Bardo::GameLoop(800, 600, "Super Bardo Game");
+	Bardo::GameLoop(SCREEN_WIDTH, SCREEN_HEIGHT, "Super Bardo Game");
 
 	return EXIT_SUCCESS;
 }
