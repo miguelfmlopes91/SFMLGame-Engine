@@ -6,7 +6,7 @@
 
 namespace Bardo
 {
-	class SplashState
+	class SplashState : public State
 	{
 	public:
 		SplashState(GameDataRef data);

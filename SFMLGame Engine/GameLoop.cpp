@@ -8,8 +8,11 @@ namespace Bardo
 		_data->window.create(sf::VideoMode(width, height), title, sf::Style::Close | sf::Style::Titlebar);
 
 		//Add Splash State
-		_data->machine.AddState(StateRef( SplashState(this->_data)));
+		_data->machine.AddState(StateRef( new SplashState(this->_data)));
 		//add loading maybe?
+
+		// StateRef _myStatePtr = std::make_unique<myStateClass>(_data);
+		// this->_data->machine.AddState(std::move(_null), false);
 
 		this->Run();
 
